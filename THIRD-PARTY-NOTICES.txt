@@ -27,8 +27,16 @@ System.Security.Cryptography.ProtectedData  8.0.0     MIT       .NET Foundation 
 Build and test tools that are NOT shipped in the binary: WiX Toolset 5.0.2 (MS-RL), xUnit (Apache-2.0),
 FlaUI (MIT), Microsoft.NET.Test.Sdk (MIT), solc 0.8.26 (GPL-3.0; used to precompile the Studio templates).
 
-The Studio can optionally download the official Solidity compiler (solc 0.8.26, GPL-3.0) at the user's
-request from binaries.soliditylang.org, verified against a pinned SHA-256. It is not distributed with the wallet.
+The Studio can optionally download these compilers at the user's request, each verified against a pinned
+SHA-256 (and, for archives, the SHA-256 of the extracted executable) before it is ever run. None of them is
+distributed with the wallet; each is governed by its own licence:
+
+  solc 0.8.26+commit.8a97fa7a (Solidity, Yul)   GPL-3.0     binaries.soliditylang.org
+  Vyper 0.4.3+commit.bff19ea2                    Apache-2.0  github.com/vyperlang/vyper (see its LICENSE file)
+  Huff Neo hnc 1.7.1                             Apache-2.0  github.com/cakevm/huff-neo
+  Fe 26.5.1 (experimental)                       Apache-2.0  github.com/argotorg/fe
+
+The wallet runs these compilers as separate programs and does not include, link or modify their code.
 
 The MIT License
 ---------------

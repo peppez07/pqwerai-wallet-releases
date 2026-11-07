@@ -8,13 +8,13 @@ release files only. The wallet and the PQWERAI blockchain are developed in a pri
 
 ## Downloads
 
-Go to the [Releases](../../releases) page. The latest release is **0.6.0** (pre-release).
+Go to the [Releases](../../releases) page. The latest release is **0.7.0** (pre-release).
 
 | File | For |
 | --- | --- |
-| `PQWERAI-Wallet-0.6.0-win-x64.msi` | Windows 10/11 x64 installer |
-| `PQWERAI-Wallet-0.6.0-win-x64-portable.zip` | Windows 10/11 x64, no installation (unzip and run `PQWERAI.Wallet.exe`) |
-| `pqwerai-wallet-cli-0.6.0-linux-x64.tar.gz` | Wallet command-line tool for Linux x64 |
+| `PQWERAI-Wallet-0.7.0-win-x64.msi` | Windows 10/11 x64 installer |
+| `PQWERAI-Wallet-0.7.0-win-x64-portable.zip` | Windows 10/11 x64, no installation (unzip and run `PQWERAI.Wallet.exe`) |
+| `pqwerai-wallet-cli-0.7.0-linux-x64.tar.gz` | Wallet command-line tool for Linux x64 |
 | `SHA256SUMS` | Checksums of the files above |
 
 ## Verify your download
@@ -22,7 +22,7 @@ Go to the [Releases](../../releases) page. The latest release is **0.6.0** (pre-
 Compare the SHA-256 of the file you downloaded with the line in `SHA256SUMS`:
 
 ```powershell
-Get-FileHash .\PQWERAI-Wallet-0.6.0-win-x64.msi -Algorithm SHA256
+Get-FileHash .\PQWERAI-Wallet-0.7.0-win-x64.msi -Algorithm SHA256
 ```
 
 ```bash
